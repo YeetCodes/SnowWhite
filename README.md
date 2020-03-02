@@ -12,4 +12,4 @@
 
 ## Resources:
 
-- (Our gold mine)[https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules]
+- [Our gold mine](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules)
