@@ -4,12 +4,19 @@
 
 ## TODO:
 
-- [ ] Give Nghia (and others) write access :(
-- [ ] Unpacking hardware
+- [x] Give Nghia (and others) write access :(
+- [x] Unpacking hardware
 - [ ] Setting up simulator environment for testing
-- [ ] Setting up Github Actions
+- [x] Setting up Github Actions
+- [x] Configure submodule
+- [ ] Start investigating JavaScript build systems
+- [ ] Decide which modules to implement
+- [ ] Figure out how to unit test
+- [ ] Start writing some code
+- [ ] Configure CI by adding extra tools, like code formater, static analysis ...
 - [ ] ...
 
 ## Resources:
 
 - [Our gold mine](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules)
+
