@@ -19,8 +19,11 @@ Module.register("MMM-CurrencyRate", {
     },
 
 
-    getDom: function () {
-
+    getDom: function (temp_doc) {
+	if (typeof document === "undefined") {
+	    // unit test case
+            document = temp_doc;
+	}
         var wrapper = document.createElement("div");
         wrapper.className = "wrapper";
 
@@ -37,7 +40,7 @@ Module.register("MMM-CurrencyRate", {
 
         var base = document.createElement("div");
         base.classList.add("small", "bright");
-        base.innerHTML = "Base Currency is " + this.config.base;
+        base.innerHTML = "Base Currency is " + this.CurrencyRate.base;
         wrapper.appendChild(base);
 
         var pair = document.createElement("th");
@@ -55,7 +58,7 @@ Module.register("MMM-CurrencyRate", {
 
     },
 
-    recieveRates: function (data) {
+    receiveRates: function (data) {
         this.CurrencyRate = data;
         this.fetched = true;
     },
@@ -67,7 +70,7 @@ Module.register("MMM-CurrencyRate", {
 
     socketNotificationReceived: function (notification, payload) {
         if (notification === "CurrencyRate_RESULT") {
-            this.recieveRates(payload);
+            this.receiveRates(payload);
             this.updateDom(3000);
         }
         this.updateDom(5000);
