@@ -1,4 +1,4 @@
-/*global exports, require, console, global */
+/*global exorts, require, console, global */
 (function () {
     'use strict';
 
@@ -7,8 +7,9 @@
     const { JSDOM } = jsdom;
     var mock = require("nodeunit-mock");
 
+
     function initialiseModule() {
-        require('./MMM-Demotivational.js');
+        require('./MMM-Yang.js');
     }
 
     global.Module = {
@@ -28,14 +29,13 @@
 
     exports.testInitalValues = function (test) {
         initialiseModule();
-        test.equal(moduleObject.defaults.demotivators.anytime[0],"For every winner, there are dozens of losers.\nOdds are you are one of them.");
-        test.equal(moduleObject.defaults.updateInterval, 5000);
-        test.equal(moduleObject.defaults.fadeSpeed, 3000);
-        test.equal(moduleObject.defaults.morningStartTime, 5);
-        test.equal(moduleObject.defaults.afternoonStartTime, 12);
-        test.equal(moduleObject.defaults.eveningStartTime, 19);
-        test.equal(moduleObject.defaults.random, true);
-        test.equal(moduleObject.lastIndexUsed, -1)
+        test.equal(moduleObject.defaults.yourName,"Yang Yang");
+        test.equal(moduleObject.defaults.randomText, "you look amazing today!");
+        test.equal(moduleObject.defaults.opacity, 1.0);
+        test.equal(moduleObject.defaults.borderRadius, "50%");
+        test.equal(moduleObject.defaults.updateInterval, 3000);
+        test.equal(moduleObject.defaults.fadeSpeed, 1000);
+        test.equal(moduleObject.defaults.afternoonEndTime, 17);
         test.done();
     };
 
@@ -45,11 +45,14 @@
         var window = dom.window;
         var document = window.document;
         console.log(moduleObject.config);
-        mock(test, moduleObject, "randomDemotivator", function() {
-            return "hello ugly!"
+        mock(test, moduleObject, "randomUrl", function() {
+            return "some/url/to/img"
+        });
+        mock(test, moduleObject, "randomCompliment", function() {
+            return "hi ugly"
         });
         var wrapper = moduleObject.getDom(document);
-        test.equal(wrapper.outerHTML, '<div class="thin xlarge bright pre-line"><span>hello ugly!</span></div>');
+        test.equal(wrapper.outerHTML, '<div class="small bright pre-line"><img src="some/url/to/img"><div class="small bright pre-line">NaN</div>hi ugly</div>');
         test.done();
     };
 }());
