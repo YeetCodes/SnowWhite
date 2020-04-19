@@ -1,0 +1,26 @@
+{
+  "name": "snowwhite",
+  "version": "0.1.0",
+  "description": "Modules for MagicMirror",
+  "scripts": {
+    "release": "npm pack && mkdir dist && mv snowwhite-0.1.0.tgz dist/",
+    "test": "npm i nodeunit-mock && grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeetCodes/SnowWhite.git"
+  },
+  "keywords": [
+    "magic",
+    "mirror",
+    "modules"
+  ],
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-jslint": "latest",
+    "jsdom": "^11.6.2",
+    "load-grunt-config": "latest",
+    "nodeunit-mock": "0.0.5"
+  }
+}
