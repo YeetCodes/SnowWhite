@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    var moduleObject, modulesList, i, hideFunction, showFunction;
+    var moduleObject;
 
     function initialiseModule() {
         require('./MMM-CurrencyRate.js');
@@ -15,19 +15,36 @@
             };
             doNothing(name);
 
-            moduleObjectArgument.config = {
-                transitionInterval: 12345,
-                ignoreModules: ['0'],
-                mode: 'global'
-            };
-
             moduleObject = moduleObjectArgument;
-        }
+
+            moduleObject.updateDom = function (time) {
+                return;
+            };
+        },
+
     };
 
-    exports.dummyTest = function (test) {
+    exports.testInitialValues = function (test) {
         initialiseModule();
-        test.equal(1,1);
+        test.equal(moduleObject.defaults.fetchTime, 6000000)
+        test.equal(moduleObject.defaults.base, "GBP");
+        test.equal(1, 1);
         test.done();
     };
+
+    exports.testRecieveRates = function (test) {
+        initialiseModule();
+        moduleObject.recieveRates("some rates");
+        test.equal(moduleObject.CurrencyRate, "some rates");
+        test.equal(moduleObject.fetched, true);
+        test.done();
+    };
+
+    exports.testSocketNotificationReceived = function (test) {
+        initialiseModule();
+        moduleObject.socketNotificationReceived("CurrencyRate_RESULT", "some new rates");
+        test.equal(moduleObject.CurrencyRate, "some new rates");
+        test.done();
+    };
+
 }());

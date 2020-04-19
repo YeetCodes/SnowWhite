@@ -61,7 +61,7 @@ Module.register("MMM-CurrencyRate", {
     },
 
     fetchNewRates: function () {
-        setInterval(() => { his.getCurrencyRate(); }, this.config.fetchTime);
+        setInterval(() => { this.getCurrencyRate(); }, this.config.fetchTime);
         this.getCurrencyRate(5000);
     },
 
