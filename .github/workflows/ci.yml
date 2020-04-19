@@ -24,3 +24,14 @@ jobs:
 
     - name: npm test
       run: npm test
+
+    - name: Cleanup artifacts
+      run: |
+        npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
+        npm run release
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: ubuntu-latest-artifact
+        path: dist
