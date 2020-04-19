@@ -136,9 +136,9 @@ Module.register("MMM-Demotivational",
             var demotivatorText = this.randomDemotivator();
             var parts = demotivatorText.split('\n');
             var demotivator = document.createElement("span");
-            for (parts of parts) {
+            for (part of parts) {
                 demotivator.appendChild(document.createTextNode(part));
-                compliment.appendChild(document.createElement("BR"));
+                demotivator.appendChild(document.createElement("BR"));
             }
             demotivator.lastElementChild.remove();
             wrapper.appendChild(demotivator);
