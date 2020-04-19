@@ -33,5 +33,5 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: ubuntu-latest-artifact
+        name: snowwhite-ubuntu-latest-artifact
         path: dist
