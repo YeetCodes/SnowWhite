@@ -1,8 +1,11 @@
-/*global exports, require, console, global */
+/*global exorts, require, console, global */
 (function () {
     'use strict';
 
     var moduleObject;
+    const jsdom = require("jsdom");
+    const { JSDOM } = jsdom;
+    var mock = require("nodeunit-mock");
 
     function initialiseModule() {
         require('./MMM-Demotivational.js');
@@ -16,12 +19,14 @@
             doNothing(name);
 
             moduleObjectArgument.config = {
-                transitionInterval: 12345,
-                ignoreModules: ['0'],
-                mode: 'global'
+                
             };
 
             moduleObject = moduleObjectArgument;
+        },
+
+        randomDemotivator: function () {
+            return "hello ugly!";
         }
     };
 
@@ -35,6 +40,20 @@
         test.equal(moduleObject.defaults.eveningStartTime, 19);
         test.equal(moduleObject.defaults.random, true);
         test.equal(moduleObject.lastIndexUsed, -1)
+        test.done();
+    };
+
+    exports.domTest = function (test) {
+        initialiseModule();
+        var dom = new JSDOM('<!doctype html><html><body></body></html>');
+        var window = dom.window;
+        var document = window.document;
+        console.log(moduleObject.config);
+        mock(test, moduleObject, "randomDemotivator", function() {
+            return "hello ugly!"
+        });
+        var wrapper = moduleObject.getDom(document);
+        test.equal(wrapper.outerHTML, '<div class="thin xlarge bright pre-line"><span>hello ugly!</span></div>');
         test.done();
     };
 }());
