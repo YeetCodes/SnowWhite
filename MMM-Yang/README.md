@@ -9,7 +9,7 @@ Budapest ID: 3054643
 ### Screenshot
 
 
-<img style="flat: left; width: 50%;" src="Screenshot/MMM-Yang.png">
+<img style="flat: left; width: 50%;" src="https://github.com/XueYing126/imgs/blob/master/MMM-Yang.png?raw=true">
 
 
 
@@ -27,9 +27,7 @@ In your terminal, go to your MagicMirror's Module folder:
 cd ~/MagicMirror/modules
 ```
 
-Clone this repository
 
-```
 
 Add some [config entries](#configuration) with the atleast the requierd [options](#options) in your config.js file. 
 
@@ -37,17 +35,18 @@ Add some [config entries](#configuration) with the atleast the requierd [options
 
 ```
 {
-		module: "currentweather",
-		position: "top_right",	
-		config: {
-			
-			location: "",
-			locationID: "3054643", //Budapest
-			appid: "****abcde12345abcde12345abcde12345ab" //openweathermap.org API key.
-		}
-	}
+	module: "currentweather",
+	position: "top_right",	
+	config: {
 
-```javascript
+		location: "",
+		locationID: "3054643", //Budapest
+		appid: "****abcde12345abcde12345abcde12345ab" //openweathermap.org API key.
+	}
+},
+
+```
+```
 {
         module: "MMM-Yang",
         position: "top_left",
@@ -67,4 +66,5 @@ Add some [config entries](#configuration) with the atleast the requierd [options
                 
                 }
 },
+```
 
