@@ -9,7 +9,7 @@ Budapest ID: 3054643
 ### Screenshot
 
 
-<img style="flat: left; width: 50%;" src="Screenshot/MMM-Yang.png">
+<img style="flat: left; width: 50%;" src="https://github.com/XueYing126/imgs/blob/master/MMM-Yang.png?raw=true">
 
 
 
@@ -45,7 +45,8 @@ Add some [config entries](#configuration) with the atleast the requierd [options
 	}
 },
 
-```javascript
+```
+```
 {
         module: "MMM-Yang",
         position: "top_left",
@@ -65,4 +66,5 @@ Add some [config entries](#configuration) with the atleast the requierd [options
                 
                 }
 },
+```
 
