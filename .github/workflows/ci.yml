@@ -19,14 +19,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: npm depend
-      run: npm depend
-
     - name: npm install
       run: npm install
-    
-    - name: npm test/format
-      run: npm gruntify
+
+    - name: npm test
+      run: npm test
 
     - name: Cleanup artifacts
       run: |

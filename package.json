@@ -4,8 +4,7 @@
   "description": "Modules for MagicMirror",
   "scripts": {
     "release": "npm pack && mkdir dist && mv snowwhite-0.1.0.tgz dist/",
-    "gruntify": "grunt",
-    "depend": "npm install grunt-prettier && npm i nodeunit-mock"
+    "test": "npm install grunt-prettier && npm i nodeunit-mock && grunt"
   },
   "repository": {
     "type": "git",
