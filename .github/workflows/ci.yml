@@ -22,7 +22,7 @@ jobs:
     - name: npm install
       run: npm install
 
-    - name: npm test
+    - name: run unit tests and format code
       run: npm test
 
     - name: Cleanup artifacts
