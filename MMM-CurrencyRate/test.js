@@ -1,4 +1,4 @@
-/*global exports, require, console, global */
+/*global exports, require, global */
 (function () {
     'use strict';
 
@@ -36,7 +36,7 @@
 	    moduleObjectArgument.config = {};
             moduleObject = moduleObjectArgument;
 
-            moduleObject.updateDom = function (time) {
+            moduleObject.updateDom = function () {
                 return;
             };
         },

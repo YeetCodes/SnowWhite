@@ -44,12 +44,11 @@ Module.register("MMM-Demotivational",
     
         },*/
         start: function () {
-            Log.info
-                (
+            Log.info(
                     "======================================\n" +
                     "| Starting up the Demotivator Module |\n" +
                     "======================================\n"
-                );
+                    );
 
             this.lastDemotivatorIndex = -1;
 

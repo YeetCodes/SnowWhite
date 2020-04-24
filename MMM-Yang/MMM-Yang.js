@@ -287,7 +287,7 @@ Module.register("MMM-Yang", {
 	},
 
 	imageArray: function() {
-		var images = new Array();;
+		var images = new Array();
 	
 		if (this.currentWeatherType in this.config.images) {
 			images.push.apply(images, this.config.images[this.currentWeatherType]);
@@ -350,7 +350,7 @@ Module.register("MMM-Yang", {
 		var complimentText = this.randomCompliment();
 
 		var compliment = document.createTextNode(complimentText);
-		var wrapper = document.createElement("div");
+		wrapper = document.createElement("div");
 		wrapper.className = this.config.classes ? this.config.classes : "small bright pre-line";
     
 		wrapper.appendChild(image);
@@ -386,7 +386,7 @@ Module.register("MMM-Yang", {
 
 
 	// Override notification handler.
-	notificationReceived: function(notification, payload, sender) {
+	notificationReceived: function(notification, payload) {
 		if (notification == "CURRENTWEATHER_DATA") {
 			this.setCurrentWeatherType(payload.data);
 		}

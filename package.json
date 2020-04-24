@@ -22,5 +22,8 @@
     "jsdom": "^11.6.2",
     "load-grunt-config": "latest",
     "nodeunit-mock": "0.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
   }
 }
