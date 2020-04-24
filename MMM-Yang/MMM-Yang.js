@@ -2,6 +2,19 @@ Module.register("MMM-Yang", {
   requiresVersion: "2.1.0",
 
   defaults: {
+
+
+
+
+
+
+
+
+
+
+
+
+    
     // Add your name.
     yourName: "Yang Yang",
     // Add some random text
