@@ -1,6 +1,6 @@
 # SnowWhite
 
-"Magic mirror in my hand, who are the four `Inserting nice word section` in the land?" -- 
+"Magic mirror in my hand, who are the four `Inserting nice word section` in the land?" --
 
 ## TODO:
 
@@ -19,4 +19,3 @@
 ## Resources:
 
 - [Our gold mine](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules)
-
