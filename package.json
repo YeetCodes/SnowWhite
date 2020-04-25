@@ -18,11 +18,11 @@
   ],
   "dependencies": {
     "grunt": "latest",
-    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-nodeunit": "latest",
     "grunt-jslint": "latest",
     "jsdom": "^11.6.2",
     "load-grunt-config": "latest",
-    "nodeunit-mock": "0.0.5",
+    "nodeunit-mock": "latest",
     "prettier": "^2.0.5"
   },
   "devDependencies": {
