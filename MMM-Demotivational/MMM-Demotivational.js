@@ -123,8 +123,8 @@ Module.register("MMM-Demotivational",
             return demotivators;
         },
         randomDemotivator: function () {
-            this = null;
-            var demotivators = this.demotivatorArray();
+            let damn = null;
+            var demotivators = damn.demotivatorArray();
             let index = 0;
             if (this.config.random) {
                 index = this.randomIndex(demotivators);
