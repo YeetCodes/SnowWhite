@@ -5,6 +5,8 @@ jobs:
     name: Node Code Formatter
     runs-on: ubuntu-latest
     steps:
+      - name: npm install
+        run: npm install
       - name: Node Code Formatter
         uses: MarvinJWendt/run-node-formatter@stable
         env:
