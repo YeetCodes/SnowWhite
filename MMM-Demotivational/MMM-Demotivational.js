@@ -52,7 +52,7 @@ Module.register("MMM-Demotivational",
                     "======================================\n" +
                     "| Starting up the Demotivator Module |\n" +
                     "======================================\n"
-                    );;;;
+                    );
 
             this.lastDemotivatorIndex = -1;
 
