@@ -1,17 +1,14 @@
 # MMM-Yang
+
 Yang Yang reminds you to take your umbrella in rainy days!
 Based on Default compliments and current weather.
 
 You must use it with the default currentweather module. (Use openweathermap.org API key)
 Budapest ID: 3054643
 
-
 ### Screenshot
 
-
 <img style="flat: left; width: 50%;" src="https://github.com/XueYing126/imgs/blob/master/MMM-Yang.png?raw=true">
-
-
 
 ## Usage
 
@@ -27,16 +24,14 @@ In your terminal, go to your MagicMirror's Module folder:
 cd ~/MagicMirror/modules
 ```
 
-
-
-Add some [config entries](#configuration) with the atleast the requierd [options](#options) in your config.js file. 
+Add some [config entries](#configuration) with the atleast the requierd [options](#options) in your config.js file.
 
 ### Configuration
 
 ```
 {
 	module: "currentweather",
-	position: "top_right",	
+	position: "top_right",
 	config: {
 
 		location: "",
@@ -46,6 +41,7 @@ Add some [config entries](#configuration) with the atleast the requierd [options
 },
 
 ```
+
 ```
 {
         module: "MMM-Yang",
@@ -63,8 +59,7 @@ Add some [config entries](#configuration) with the atleast the requierd [options
                 // Add some random text to show.
                 randomText: "",
                 // Compliments
-                
+
                 }
 },
 ```
-
