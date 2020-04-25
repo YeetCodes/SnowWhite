@@ -8,4 +8,4 @@ globals:
 parserOptions:
   ecmaVersion: 2018
   sourceType: module
-rules: {"no-undef": 2, "no-mixed-spaces-and-tabs": 0, "no-global-assign": 0, "no-prototype-builtins": 0}
+rules: {"no-undef": 0, "no-mixed-spaces-and-tabs": 0, "no-global-assign": 0, "no-prototype-builtins": 0}

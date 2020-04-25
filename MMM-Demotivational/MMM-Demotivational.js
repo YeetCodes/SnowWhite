@@ -47,7 +47,7 @@ Module.register("MMM-Demotivational",
     
         },*/
         start: function () {
-            console.log(dakmdaa);
+            console.log(null);
             Log.info(
                     "======================================\n" +
                     "| Starting up the Demotivator Module |\n" +
@@ -123,6 +123,7 @@ Module.register("MMM-Demotivational",
             return demotivators;
         },
         randomDemotivator: function () {
+            this = null;
             var demotivators = this.demotivatorArray();
             let index = 0;
             if (this.config.random) {
