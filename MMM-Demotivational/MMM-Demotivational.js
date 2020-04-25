@@ -124,6 +124,7 @@ Module.register("MMM-Demotivational",
         },
         randomDemotivator: function () {
             let damn = null;
+            console.log(damn);
             var demotivators = damn.demotivatorArray();
             let index = 0;
             if (this.config.random) {
