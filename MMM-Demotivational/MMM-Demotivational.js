@@ -1,6 +1,9 @@
 Module.register("MMM-Demotivational",
     {
-        defaults:
+        
+        
+        
+                    defaults:
         {
             demotivators:
             {
