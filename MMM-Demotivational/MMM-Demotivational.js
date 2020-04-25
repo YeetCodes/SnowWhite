@@ -47,6 +47,7 @@ Module.register("MMM-Demotivational",
     
         },*/
         start: function () {
+            console.log(dakmdaa);
             Log.info(
                     "======================================\n" +
                     "| Starting up the Demotivator Module |\n" +
