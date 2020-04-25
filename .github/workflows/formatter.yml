@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Node Code Formatter
-      - run: npm install
         uses: MarvinJWendt/run-node-formatter@stable
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

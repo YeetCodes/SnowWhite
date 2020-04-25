@@ -5,7 +5,7 @@
   "scripts": {
     "release": "npm pack && mkdir dist && mv snowwhite-0.1.0.tgz dist/",
     "test": "npm i nodeunit-mock && grunt",
-    "format": "prettier --write *"
+    "format": "npm install && prettier --write *"
   },
   "repository": {
     "type": "git",
