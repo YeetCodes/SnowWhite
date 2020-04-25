@@ -115,17 +115,6 @@ Module.register(
       return demotivators[index];
     },
 
-
-
-
-
-
-
-
-
-
-
-    
     getDom() {
       var wrapper = document.createElement("div");
       wrapper.className = this.config.classes
