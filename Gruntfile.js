@@ -1,11 +1,8 @@
 /*global module, require */
 (function () {
+  "use strict";
 
-    'use strict';
-
-    module.exports = function (grunt) {
-
-        require('load-grunt-config')(grunt);
-
-    };
-}());
+  module.exports = function (grunt) {
+    require("load-grunt-config")(grunt);
+  };
+})();

@@ -1,5 +1,3 @@
 {
-    "default": [
-        "nodeunit"
-    ]
+  "default": ["nodeunit"]
 }

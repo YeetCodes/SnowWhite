@@ -5,7 +5,7 @@
   "scripts": {
     "release": "npm pack && mkdir dist && mv snowwhite-0.1.0.tgz dist/",
     "test": "npm i nodeunit-mock && grunt",
-    "format": "prettier --write"
+    "format": "prettier --write *"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
     "jsdom": "^11.6.2",
     "load-grunt-config": "latest",
     "nodeunit-mock": "0.0.5",
-    "prettier": "latest"
+    "prettier": "^2.0.5"
   }
 }
