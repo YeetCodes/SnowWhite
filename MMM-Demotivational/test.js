@@ -30,7 +30,7 @@
       moduleObject.defaults.demotivators.anytime[0],
       "For every winner, there are dozens of losers.\nOdds are you are one of them."
     );
-    test.equal(moduleObject.defaults.updateInterval, 5000);
+    test.equal(moduleObject.defaults.updateInterval, 10000);
     test.equal(moduleObject.defaults.fadeSpeed, 3000);
     test.equal(moduleObject.defaults.morningStartTime, 5);
     test.equal(moduleObject.defaults.afternoonStartTime, 12);
