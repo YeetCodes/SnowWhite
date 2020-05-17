@@ -20,7 +20,7 @@ Module.register(
         afternoon: [],
         evening: [],
       },
-      updateInterval: 5000,
+      updateInterval: 10000,
       fadeSpeed: 3000,
       morningStartTime: 5,
       afternoonStartTime: 12,
