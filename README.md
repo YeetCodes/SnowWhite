@@ -1,21 +1,33 @@
-# SnowWhite
+# Snow White
 
-"Magic mirror in my hand, who are the four `Inserting nice word section` in the land?" --
+This repository contains custom modules for Magic Mirror to use.
 
-## TODO:
+## Getting Started
 
-- [x] Give Nghia (and others) write access :(
-- [x] Unpacking hardware
-- [ ] Setting up simulator environment for testing
-- [x] Setting up Github Actions
-- [x] Configure submodule
-- [ ] Start investigating JavaScript build systems
-- [ ] Decide which modules to implement
-- [ ] Figure out how to unit test
-- [ ] Start writing some code
-- [ ] Configure CI by adding extra tools, like code formater, static analysis ...
-- [ ] ...
+Follow the installation and running instructions from Magic Mirror
 
-## Resources:
+### Prerequisites
 
-- [Our gold mine](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules)
+You will require `npm`.
+
+### Installing
+
+Be sure to edit the Magic Mirror `config.js` file to properly display and position the Snow White modulese.
+
+## Running the tests
+
+This is handled by the CI system upon pull-request to SnowWhite and also upon pull-requests to Magic Mirror. The command to run the tests is `npm test`.
+
+## Deployment
+
+Deployment is automatically handled by the CI/CD system on Magic Mirror and creates a release branch on the Github.
+
+## Contributing
+
+Us. Team Cool Poop.
+
+## Acknowledgments
+
+* Gera Zoltan
+* Whisperity
+
