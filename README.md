@@ -16,7 +16,7 @@ Be sure to edit the Magic Mirror `config.js` file to properly display and positi
 
 ## Running the tests
 
-This is handled by the CI system upon pull-request to SnowWhite and also upon pull-requests to Magic Mirror.
+This is handled by the CI system upon pull-request to SnowWhite and also upon pull-requests to Magic Mirror. The command to run the tests is `npm test`.
 
 ## Deployment
 
