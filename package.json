@@ -20,7 +20,7 @@
     "grunt": "latest",
     "grunt-contrib-nodeunit": "latest",
     "grunt-jslint": "latest",
-    "jsdom": "^11.6.2",
+    "jsdom": "^16.5.0",
     "load-grunt-config": "latest",
     "nodeunit-mock": "latest",
     "prettier": "^2.0.5"
